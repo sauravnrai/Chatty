@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+
+    <!--- Adding css and javascript --->
+    <link rel="stylesheet" href="/style.css">
+
+
+<!-- Loading bootstrap, jquery, sockjs, and stomp-websocket in the same order. changing order will cause errors-->
+
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+
+
+
+<!-- Jquery is needed to be loaded first before the script-->>
+    <script src="/script1.js"></script>
+
+    
+
+
+
+
+
+</head>
+<body class="bg-primary">
+    
+    <div id="name-form" class="bg-primary d-flex align-items-center justify-content-center">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+            </div>
+
+             <div class="col-md-4 offset-md-4"> <!-- column has 4 Grids at the center -->
+
+                <div class="input-group">
+ 
+                    <!--Input field that has name-value key-pair to fetch and a button at side using input-group-append -->
+                    <input type="text" placeholder="Enter Your Name" id="name-value" autofocus class= "form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark" id="login">Enter</button>
+                    </div>
+
+                </div>
+
+
+             </div>
+        </div>
+
+
+    </div>
+
+
+
+
+ <!-- After enterring the details, this infromation will be displayed i.e Chat room  -->   
+<div id="chat-room" class="d-none">
+<h1 style="text-align: center;">Welcome to chatty!</h1>
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-md-6 offset-md-3">
+
+
+            <div class="card mt-3">
+
+                <h3 id="nmae-title"></h3>
+
+                <div class="card-header">
+
+
+                </div>
+
+
+
+                <div class="card-body">
+
+                    <div class="input-group">
+ 
+                        <!--Input field that has name-value key-pair to fetch and a button at side using input-group-append -->
+                        <input type="text" placeholder="Enter Your Message" id="message-value" autofocus class= "form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" id="send-btn">Send</button>
+                            <button class="btn btn-dark" id="logout">Logout</button>
+
+                        </div>
+    
+                    </div>
+
+
+            <div class="table-responsive">
+
+                <table id="message-container-table">
+
+            
+
+
+                </table>
+            </div>
+
+
+
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+
+</body>
+</html>
