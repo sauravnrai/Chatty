@@ -41,7 +41,7 @@ Stomp will provide us with methods to send, connect, create endpoints, etc. We w
 
 
 
-## Modules
+## Server-side and Client-side Information
 
 ### Server-side work
 
