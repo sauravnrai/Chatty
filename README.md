@@ -3,7 +3,7 @@
 
 ## Project Description
 
-Chatty is a chat application built using Spring Boot and Websocket. The application allows multiple users to chat simultaneously while keeping all the messages in a message broker. There is no upper limit on how many users can be in the chat room, but it is recommended that at least 2 users be present at any given time. Any user can log in and log out of the chat room at any time. The project can further be extended by adding additional features like a message timer restricting how much time a user should wait before sending their next message, emojis, storing messages based on sessions, etc. This was a simple but effective implementation to understand how cheating applications work in real-time. We have used Java, javascript, jQuery, bootstrap, sockjs, WebSockets, and stomp protocol. 
+Chatty is a chat application built using Spring Boot and Websocket. The application allows multiple users to chat simultaneously while keeping all the messages in a message broker. There is no upper limit on how many users can be in the chat room, but it is recommended that at least 2 users be present at any given time. Any user can log in and out of the chat room anytime. The project can be extended by adding additional features like a message timer restricting how long a user should wait before sending their next message, emojis, storing messages based on sessions, etc. This was a simple but effective implementation to understand how chatting applications work in real time. We have used Java, javascript, jQuery, bootstrap, sockjs, WebSockets, and stomp protocol. 
 
 ![Image Alt](https://github.com/sauravnrai/Chatty/blob/master/login%20page.png?raw=true)
 ![Image Alt](https://github.com/sauravnrai/Chatty/blob/master/Chat%20room.png?raw=true)
